@@ -1,3 +1,4 @@
+import 'package:finance_tracker/screens/home/views/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'dart:math';
@@ -52,6 +53,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
       ),
+      body: const MainScreen(),
     );
   }
 }
