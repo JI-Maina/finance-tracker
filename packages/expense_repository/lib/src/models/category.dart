@@ -4,7 +4,7 @@ class Category {
   String categoryId;
   String name;
   String icon;
-  String color;
+  int color;
   int totalExpense;
 
   Category({
@@ -18,7 +18,7 @@ class Category {
   static final empty = Category(
     name: '',
     icon: '',
-    color: '',
+    color: 0,
     categoryId: '',
     totalExpense: 0,
   );
