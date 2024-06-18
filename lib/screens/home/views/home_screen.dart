@@ -1,9 +1,13 @@
+import 'package:expense_repository/expense_repository.dart';
+import 'package:finance_tracker/screens/add_expense/blocs/create_category_bloc/create_category_bloc.dart';
 import 'package:finance_tracker/screens/add_expense/views/add_expense.dart';
 import 'package:finance_tracker/screens/home/views/main_screen.dart';
 import 'package:finance_tracker/screens/stats/stats_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'dart:math';
+
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -54,7 +58,12 @@ class _HomeScreenState extends State<HomeScreen> {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => const AddExpense()),
+            MaterialPageRoute(
+              builder: (context) => BlocProvider(
+                create: (context) => CreateCategoryBloc(FirebaseExpenseRepo()),
+                child: const AddExpense(),
+              ),
+            ),
           );
         },
         shape: const CircleBorder(),
