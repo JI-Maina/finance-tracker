@@ -1,10 +1,23 @@
 import 'package:finance_tracker/screens/home/views/main_screen.dart';
+import 'package:finance_tracker/screens/stats/stats_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'dart:math';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  int selectedIndex = 0;
+
+  var screens = const [
+    MainScreen(),
+    StatsScreen(),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -14,6 +27,11 @@ class HomeScreen extends StatelessWidget {
           top: Radius.circular(30),
         ),
         child: BottomNavigationBar(
+          onTap: (index) {
+            setState(() {
+              selectedIndex = index;
+            });
+          },
           backgroundColor: Colors.white,
           showSelectedLabels: false,
           showUnselectedLabels: false,
@@ -53,7 +71,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
       ),
-      body: const MainScreen(),
+      body: screens[selectedIndex],
     );
   }
 }
