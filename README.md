@@ -130,3 +130,45 @@ Navigate to the build directory and copy the -v7a-release.apk file
 ```
 
 Install the app on your phone
+
+<!-- To Do -->
+## :notes: to-do
+  <ul>
+  <li> Implement authentication of users </li>
+  <li> Implement admin side of the app </li>
+  </ul>
+ 
+<!-- Contributing -->
+## :wave: Contributing
+
+<a href="https://github.com/JI-Maina/finance_tracker/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=JI-Maina/finance_tracker" />
+</a>
+
+
+Contributions are always welcome!
+
+See `contributing.md` for ways to get started.
+
+
+
+
+<!-- License -->
+## :warning: License
+
+Distributed under the no License. 
+
+
+<!-- Contact -->
+## :handshake: Contact
+
+Chintan Golakiya - [@_chint4n_](https://twitter.com/McMaina_) - irutujmaina@gmail.com
+
+Project Link: [https://github.com/JI-Maina/finance_tracker](https://github.com/JI-Maina/finance_tracker)
+
+
+<!-- Acknowledgments -->
+## :gem: Acknowledgements
+Following libraries have been used in this projects.
+
+ - [Awesome Readme Template](https://github.com/Louis3797/awesome-readme-template)
