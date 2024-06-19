@@ -2,9 +2,13 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:expense_repository/expense_repository.dart';
+import 'package:intl/intl.dart';
 
 class MainScreen extends StatelessWidget {
-  const MainScreen({super.key});
+  final List<Expense> expenses;
+
+  const MainScreen(this.expenses, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +25,7 @@ class MainScreen extends StatelessWidget {
             const SizedBox(height: 20),
             Expanded(
               child: ListView.builder(
-                itemCount: 3,
+                itemCount: expenses.length,
                 itemBuilder: (context, int i) {
                   return Padding(
                     padding: const EdgeInsets.only(bottom: 16),
@@ -44,19 +48,21 @@ class MainScreen extends StatelessWidget {
                                       width: 50,
                                       height: 50,
                                       decoration: BoxDecoration(
-                                        color: Colors.yellow[700],
+                                        color:
+                                            Color(expenses[i].category.color),
                                         shape: BoxShape.circle,
                                       ),
                                     ),
-                                    const Icon(
-                                      Icons.food_bank_outlined,
+                                    Image.asset(
+                                      'assets/${expenses[i].category.icon}.png',
+                                      scale: 2,
                                       color: Colors.white,
-                                    )
+                                    ),
                                   ],
                                 ),
                                 const SizedBox(width: 12),
                                 Text(
-                                  'Food',
+                                  expenses[i].category.name,
                                   style: TextStyle(
                                     fontSize: 14,
                                     fontWeight: FontWeight.w600,
@@ -70,7 +76,7 @@ class MainScreen extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
                                 Text(
-                                  '-\$45.00',
+                                  '-\$${expenses[i].amount}.00',
                                   style: TextStyle(
                                     fontSize: 14,
                                     fontWeight: FontWeight.w400,
@@ -79,7 +85,8 @@ class MainScreen extends StatelessWidget {
                                   ),
                                 ),
                                 Text(
-                                  'Food',
+                                  DateFormat('dd/MM/yyyy')
+                                      .format(expenses[i].date),
                                   style: TextStyle(
                                     fontSize: 14,
                                     fontWeight: FontWeight.w400,
@@ -105,9 +112,7 @@ class MainScreen extends StatelessWidget {
 }
 
 class _ListViewTitle extends StatelessWidget {
-  const _ListViewTitle({
-    super.key,
-  });
+  const _ListViewTitle();
 
   @override
   Widget build(BuildContext context) {
@@ -119,7 +124,7 @@ class _ListViewTitle extends StatelessWidget {
           style: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.bold,
-            color: Theme.of(context).colorScheme.onBackground,
+            color: Theme.of(context).colorScheme.onSurface,
           ),
         ),
         GestureDetector(
