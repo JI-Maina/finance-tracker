@@ -6,9 +6,9 @@ Don't forget to give this project a star for additional support ;)
 Maybe you can mention me or this repo in the acknowledgements too
 -->
 <div align="center">
-  <h1>Online Exam Portal</h1>
+  <h1>Expenses Tracker</h1>
   <p>
-    A Online Exam portal website with backend in Nodejs and frontend in React js 
+    An android/ios mobile app with firebase as backend and flutter framework 
   </p>
   
 <!-- Badges -->
@@ -31,10 +31,25 @@ Maybe you can mention me or this repo in the acknowledgements too
 </p>
    
 <h4>
-    
-  <span> · </span>
     <a href="https://github.com/JI-Maina/finance_tracker/issues/">Report Bug</a>
   <span> · </span>
     <a href="https://github.com/JI-Maina/finance_tracker/issues/">Request Feature</a>
   </h4>
 </div>
+
+<br />
+
+<!-- Table of Contents -->
+# :notebook_with_decorative_cover: Table of Contents
+
+- [About the Project](#star2-about-the-project)
+  * [Tech Stack](#space_invader-tech-stack)
+  * [Features](#dart-features)
+- [Getting Started](#toolbox-getting-started)
+  * [Prerequisites](#bangbang-prerequisites)
+  * [Run Locally](#running-run-locally)
+- [To-do](#notes-to-do)
+- [Contributing](#wave-contributing)
+- [License](#warning-license)
+- [Contact](#handshake-contact)
+- [Acknowledgements](#gem-acknowledgements)
