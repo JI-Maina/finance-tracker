@@ -53,3 +53,27 @@ Maybe you can mention me or this repo in the acknowledgements too
 - [License](#warning-license)
 - [Contact](#handshake-contact)
 - [Acknowledgements](#gem-acknowledgements)
+
+
+<!-- About the Project -->
+## :star2: About the Project
+  Mobile App that helps users to track their financial expenses
+
+<!-- TechStack -->
+### :space_invader: Tech Stack
+
+<details>
+  <summary>App</summary>
+  <ul>
+    <li><a href="https://flutter.dev/">Flutter</a></li>
+    <li><a href="https://bloclibrary.dev">Bloc</a></li>
+    <li><a href="https://docs.flutter.dev/ui/design/material">Material Design</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://firebase.google.com/">Firebase</a></li>
+  </ul>
+</details>
