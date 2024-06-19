@@ -162,7 +162,7 @@ Distributed under the no License.
 <!-- Contact -->
 ## :handshake: Contact
 
-Chintan Golakiya - [@_chint4n_](https://twitter.com/McMaina_) - irutujmaina@gmail.com
+JI Maina - [@McMaina_](https://twitter.com/McMaina_) - irutujmaina@gmail.com
 
 Project Link: [https://github.com/JI-Maina/finance_tracker](https://github.com/JI-Maina/finance_tracker)
 
