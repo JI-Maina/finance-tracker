@@ -97,7 +97,7 @@ Maybe you can mention me or this repo in the acknowledgements too
 This project uses Flutter 3.0.
 
 <!-- Run Locally -->
-### :running: Run Locally
+### :running: Run App on Your Phone
 
 Clone the project
 
