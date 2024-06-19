@@ -77,3 +77,56 @@ Maybe you can mention me or this repo in the acknowledgements too
     <li><a href="https://firebase.google.com/">Firebase</a></li>
   </ul>
 </details>
+
+<!-- Features -->
+### :dart: Features
+
+- User
+  - Create expense category
+  - Create an expense
+  - Fetch all expense categories
+  - Fetch all expenses
+
+<!-- Getting Started -->
+## 	:toolbox: Getting Started
+
+
+<!-- Prerequisites -->
+### :bangbang: Prerequisites
+
+This project uses Flutter 3.0.
+
+<!-- Run Locally -->
+### :running: Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/JI-Maina/finance_tracker.git 
+```
+
+Go to the project directory
+
+```bash
+  cd project-directory
+```
+
+Install dependencies
+
+```bash
+  pub get
+```
+
+Build the app
+
+```bash
+  flutter build apk --split-per-abi
+```
+
+Navigate to the build directory and copy the -v7a-release.apk file
+
+```bash
+  cd bluid/app/outputs/flutter_apk/
+```
+
+Install the app on your phone
