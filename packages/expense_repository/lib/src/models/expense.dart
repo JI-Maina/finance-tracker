@@ -14,6 +14,13 @@ class Expense {
     required this.expenseId,
   });
 
+  static final empty = Expense(
+    amount: 0,
+    expenseId: '',
+    date: DateTime.now(),
+    category: Category.empty,
+  );
+
   ExpenseEntity toEntity() {
     return ExpenseEntity(
       date: date,
